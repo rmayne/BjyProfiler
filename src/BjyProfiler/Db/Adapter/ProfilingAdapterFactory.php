@@ -27,7 +27,7 @@ class ProfilingAdapterFactory implements FactoryInterface
 
         $adapter = new ProfilingAdapter(array(
             'driver'    => 'pdo',
-            'dsn'       => 'mysql:dbname='.$config['db']['database'].';host='.$config['db']['hostname'],
+            'dsn'       => 'mysql:dbname='.$config['db']['database'].';charset=utf8;host='.$config['db']['hostname'],
             'database'  => $config['db']['database'],
             'username'  => $config['db']['username'],
             'password'  => $config['db']['password'],
